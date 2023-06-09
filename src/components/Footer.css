@@ -1,0 +1,10 @@
+/* footer.css */
+.footer {
+    background: #111;
+    color: var(--clr-accent);
+    text-align: center;
+    /* padding-top: 10px; */
+    font-size: var(--fs-h3);
+    color: white;
+    padding: 15px;
+}

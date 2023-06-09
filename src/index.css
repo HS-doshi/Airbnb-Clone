@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  position: relative;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 4rem;
+  box-shadow: 0px 0.1px 5px rgb(215, 215, 215);
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+}
+
+.leftArr {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+.header div>p {
+  padding: 0.7rem 0.8rem;
+  border-radius: 50px;
+}
+
+.header div>p:hover {
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+
+.header div:nth-child(2) {
+  margin-right: 1rem;
+}
+
+.header div:nth-child(2) div {
+  align-items: center;
+  gap: 0.9rem;
+  border: 1px solid rgb(207, 207, 207);
+  padding: 0.3rem;
+  padding-left: 0.7rem;
+  border-radius: 50px;
+}
+
+.header img:first-child {
+  width: 135px;
+  padding: 1rem;
+}
+
+.header div:nth-child(2) img:nth-child(2) {
+  width: 50px;
+  padding: 0.7rem 1rem;
+  border-radius: 50%;
+}
+
+.header div:nth-child(2) img:nth-child(2):hover {
+  background-color: rgb(240, 240, 240);
+  ;
+  cursor: pointer;
+}
+
+.header div:nth-child(2) div>img {
+  width: 16px;
+  padding: 0;
+}
+
+.header div:nth-child(2) div img:nth-child(2) {
+  width: 30px;
+  padding: 0;
+}
+
+.header div:nth-child(2) div:nth-child(3) {
+  margin-left: 0.3rem;
+}
+
+.header div:nth-child(2) div:nth-child(3):hover {
+  box-shadow: 0px 3px 4px rgb(223, 223, 223);
+  cursor: pointer;
+  transition: 0.2s ease-out 100ms
+}
+
+.thisWeek {
+  width: 590px;
+  height: 330px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-position-x: center right;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.details {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+.details div>p:first-child {
+  font-size: 0.8rem;
+}
+
+.details div>p:nth-child(2) {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  padding: 0;
+  margin: 0;
+}
+
+.details>p:nth-child(2) {
+  font-size: 1rem;
+  width: fit-content;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+}
+
+.details>p:nth-child(2):hover {
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 1rem;
+  margin-right: 5rem;
+}
+
+.parentSec {
+  margin-left: 5rem;
+}
+
+.SectionHead {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.8rem 0;
+  margin-right: 5rem;
+}
+
+.SectionHead>p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.SectionHead div {
+  display: flex;
+  align-items: center;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+}
+
+.arrows>img {
+  width: 30px;
+  border: 0.5px solid rgb(195, 195, 195);
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 50%;
+}
+
+.mainCard {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.mainCard::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  padding-right: 0;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.5rem 0;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  margin-right: 10rem;
+}
+
+.categories::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.categories span {
+  background-color: rgb(239, 239, 239);
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.scat {
+  display: flex;
+  gap: 0.4rem;
+  border-right: 1px solid rgb(210, 210, 210);
+  padding-right: 0.5rem;
+}
+
+.scat span {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(203, 203, 203);
+  cursor: pointer;
+}
+
+.scat span:hover {
+  border: 1px solid black;
+}
+
+.categories img {
+  width: 37px;
+  position: absolute;
+  right: 0;
+  border: 1px solid rgb(205, 205, 205);
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-right: 7.3rem;
+  cursor: pointer;
+}
+
+.categories img:hover {
+  background-color: rgb(240, 240, 240);
+  ;
+}
+
+.secHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secHeader {
+  font-weight: bold;
+}
+
+.secHeader>p {
+  font-size: 1.4rem;
+  padding: 1.5rem 0;
+  font-weight: bold
+}
+
+.mainCard {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.cardsCity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 217px;
+  word-wrap: break-word;
+  color: rgb(56, 56, 56);
+}
+
+.cardsCity>p {
+  width: 217px;
+  height: 290.9px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+
+.cardsCity>p img {
+  height: 45px;
+  cursor: pointer;
+  float: right;
+  padding: 0.5rem;
+}
+
+.cardsCity span:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.cardsCity span:nth-child(2) img {
+  width: 12px;
+}
+
+.cardsCity span:nth-child(4) {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.cardsCity span:nth-child(4)>span {
+  font-weight: normal;
+}
+
+.childSec {
+  margin: 0.5rem 0;
+  margin-right: 5rem;
+}
+
+.childSecThird {
+  margin-top: 2.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+
+  .header img:first-child {
+    display: none;
+  }
+
+  .header div {
+    display: none;
+  }
+
+  .leftArr {
+    display: inline;
+    position: absolute;
+    left: 0;
+    margin-left: 1rem;
+  }
+
+  .SectionHead {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .parentSec {
+    margin: 1rem;
+  }
+
+  .thisWeek {
+    width: 250px;
+    height: 360px;
+    background-position: center;
+  }
+
+  .details {
+    width: 100%;
+  }
+
+  .categories img {
+    margin-right: 0rem;
+    display: none;
+  }
+
+  .categories {
+    margin-right: 0rem;
+  }
+
+  .arrows {
+    display: none;
+  }
+
+  .secHeader>p {
+    font-size: 1.2rem;
+  }
+
+  div {
+    display: inline;
+  }
+
+  body {
+    margin: 0 1rem;
+  }
+
+  .footer {
+    background: #111;
+    color: var(--clr-accent);
+    text-align: center;
+    padding-top: 10px;
+    font-size: var(--fs-h3);
+  }
+}
